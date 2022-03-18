@@ -1,0 +1,32 @@
+html{
+    background-color: blanchedalmond;
+}
+
+p{
+    color:#58EDE6
+}
+
+#text4{
+    color: orange;
+}
+
+p.txtEspecial{
+    color:#00478A;
+    font-size: 15px;
+}
+
+img,p {
+    display: block;
+}
+
+nav{
+    background-color: black;
+    border: 15px red solid;
+    padding: 10px;
+    margin-top: 10px;
+    }
+
+header {
+    background-color: white;
+    background-position: center;
+}
