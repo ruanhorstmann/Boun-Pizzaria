@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boun Pizzaria</title>
+
+  <!-- Imagem na aba do navegador-->
+  <link rel="icon" type="imagem/png" href="/img/logo_aba.png">
+  <link rel="stylesheet" href="/css/normalize.css" > 
+  <link rel="stylesheet" href="/css/estilo.css" >
+  
+ 
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="/index.html"><img src="/img/Logo.png"></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/quemsomos/quemsomos.html">Quem somos</a></li>
+        <li><a href="/cardapio/cardapio.html">Cardápio</a></li>
+        <li><a href="/promocoes/pomocoes.html">Promoções</a></li>
+        <li><a href="/restaurantes/restaurantes.html">Restaurantes</a></li>
+        <li><a href="/contato/contato.html">Contato</a></li>
+        <li><a href="/delivery/delivery.html">Peça Online</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <article class="card">
+    <div class="info">
+      <p> PIZZAS</p>
+    </div>
+  </article>
+<ul class=" test">
+  <li><button onclick="mostrarTexto('pizzas')">PIZZAS</button></li>
+  <div id="pizzas" style="display: none;">
+    <div>
+      <ul class="box">
+        <li><img src="/img/f1.png" width="300" ></a></li>
+        <h5>
+          Milho e Bacon
+        </h5>
+        <p>
+         Igredientes: Mussarela, Milho e Bacon 
+        </p>
+        <h6>
+          Valor: $40,00
+        </h6>
+        <li><img src="/img/f3.png" width="300" ></a></li>
+        <h5>
+          Milho e Bacon
+        </h5>
+        <p>
+         Igredientes: Mussarela, Milho e Bacon 
+        </p>
+        <h6>
+          Valor: $40,00
+        </h6>
+        
+      </ul>
+    </div>
+         </div>
+  <li><button onclick="mostrarTexto('bebidas')">BEBIDAS</button></li>
+  <div id="bebidas" style="display: none;">
+    <ul class="box">
+      <li><img src="/img/cocalata.jpg" width="150" ></a></li>
+      <h5>
+        Coca-Cola
+      </h5>
+
+      <h6>
+        Valor: $5,00
+      </h6>
+      <li><img src="/img/guarana.jpg" width="300" ></a></li>
+      <h5>
+        Guarana antartica
+      </h5>
+
+      <h6>
+        Valor: $5,00
+      </h6>
+      
+    </ul>
+   </div>
+
+   <li><button onclick="mostrarTexto('acompanhamento')">ACOMPANHAMENTOS</button></li>
+   <div id="acompanhamento" style="display: none;">
+ 
+      <ul class="box">
+        <li><img src="/img/batata.jpg" width="300" ></a></li>
+        <h5>
+          Bata frita
+        </h5>
+  
+        <h6>
+          Valor: $10,00
+        </h6>
+        <li><img src="/img/nuggets.jpg" width="300" ></a></li>
+        <h5>
+          Nuggets de frango
+        </h5>
+  
+        <h6>
+          Valor: $15,00
+        </h6>
+        
+      </ul>
+     
+    </div>
+  
+  </ul>
+  
+
+  <script>
+
+    function mostrarTexto(el) {
+             var display = document.getElementById(el).style.display;
+         if(display == "none")
+             document.getElementById(el).style.display = 'block';
+         else
+             document.getElementById(el).style.display = 'none';
+        }
+    </script>
+
+    </script>
+    
+
+ <script src="/mobile-navbar.js"></script>
+
+ <style>
+  img{
+    
+  margin-left: 20%;
+  }
+
+  h3{
+    width: 50%;
+  margin-left: 20%;
+  }
+  h5{
+    width: 50%;
+  margin-left: 20%;
+  }
+  h6{
+
+    width: 50%;
+  margin-left: 20%;
+  }
+
+  p{
+    width: 50%;
+  margin-left: 20%;
+  }
+
+  button {
+  cursor: pointer;  
+  background: rgb(221, 127, 4);;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+ 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+ 
+  
+  }
+  .test{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+  }
+ </style>
+</body>
+
+     <script src="/mobile-navbar.js"></script>
+    <footer>
+      <div>
+        <p>Boun Pizzaria © Copyright 2022 - Todos os direitos reservados.</p>
+        <ul class="main-footer">
+          <li><a href="#"><img src="/img/facebook.png" width="70" margin-top="100"></a></li>
+          <li><a href="#"><img src="/img/Instagram.png" width="70" ></a></li>
+          
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+</html>
